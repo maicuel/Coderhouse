@@ -1,0 +1,47 @@
+body{
+	background-color: #222;
+	color:#fff;
+}
+td {
+	border:1px solid white;
+	padding: 5px;
+}
+th{
+	background: #999;
+	color:#222;
+	padding: 5px;
+}
+	
+.oculta{
+	border-style:none;
+	text-align: right;
+	font-weight: bold;
+}
+#total{
+	font-weight: bold;
+	background: red;
+	border: none;
+	font-family: Verdana;
+	font-size: 20px;
+}
+
+nav{
+	margin-top: 20px;
+}
+
+nav a{
+	font-family: Verdana;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	margin-left: 5px;
+	background-color: #333;
+	padding:10px;
+	border-radius: 10%;
+
+}
+
+nav a:hover{
+	color: white;
+	background-color: red;
+}

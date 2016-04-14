@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Fomulario</title>
+</head>
+<body>
+<h2>Formulario</h2>
+		<form action="formulario.html" method="POST">
+			<fieldset>
+				<legend>Datos del Cliente</legend>
+				<label for="Nombre">Nombre:</label> 
+				<input type="text" name="nombre"><br>
+				<label for="Apellido">Apellido:</label> 
+				<input type="text" name="apellido"><br>
+				<label for="Rut">Rut:</label> 
+				<input type="text" name="rut" placeholder="XX.XXX.XXX-X"><br>
+				<label for="Correo">Correo</label>
+				<input type="text" name="correo" placeholder="nombre@correo.com">
+			</fieldset>
+
+
+			<fieldset>
+				<legend>Sobre el servicio</legend>
+				<label for="ultimo_mes">Utilicé el servicio durante el último mes</label>
+				<input type="checkbox" value="1" id="ultimo_mes" name="ultimo_mes">
+                <p>
+	                <h2>Indique los colores con que ha utilizado el servicio</h2>
+					<br>
+					<label for="color_amarillo">Azul</label>
+	                <input type="checkbox" value="1" id="color_amarillo" name="color_amarillo">
+	                <label for="color_azul">Azul</label>
+	                <input type="checkbox" value="1" id="color_azul" name="color_azul">
+	                <label for="color_rojo">Rojo</label>
+	                <input type="checkbox" value="1" id="color_rojo" name="color_rojo">
+                </p>
+                <P>
+                <h2>¿Cuánto tiempo utilizó el servicio?</h2>
+	            <input type="radio" value="1dia" name="tiempo de uso">
+	            <label>1 dia</label>
+	            <input type="radio" value="1semana" name="tiempo de uso">
+	            <label>1 semana</label>
+	            <input type="radio" value="1mes" name="tiempo de uso">
+	            <label>1 mes</label>
+	            </P>
+			</fieldset>
+			<fieldset>
+				<legend>Evidencia</legend>
+				<label for="captura_pantalla">Ingrese captura de pantalla</label>
+				<input type="file" name="captura_pantalla">
+			</fieldset>
+			<fieldset>
+				<legend>Calidad del servicio</legend>
+				<h2>¿Cómo calificaría el servicio?</h2>
+				<select name="calidad_sevicio">
+				<option disabled selected value="0">Seleccione su preferencia</option>
+					<optgroup label="Bueno">
+						<option value="6">De excelencia</option>
+						<option value="5">Recomendable</option>						
+					</optgroup>
+					<optgroup label="Aceptable">
+						<option value="4">Cumple expectativas</option>
+						<option value="3">Cumple lo básico</option>
+					</optgroup>
+					<optgroup label="Negativo">
+						<option value="2">No recomendable</option>
+						<option value="1">Inaceptable</option>
+					</optgroup>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Comentarios</legend>
+				<label for="comentario"></label>
+				<textarea name="comentario" placeholder="Tu opinión es importante para nosotros" cols="80" rows="10"></textarea>
+			</fieldset>
+			
+			<button type="submit">enviar</button>	
+		</form>
+</body>
+</html>
+<!-- comentario --> 
+					
